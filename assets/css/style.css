@@ -178,6 +178,22 @@ img{
     backdrop-filter: blur(7px);
 }
 
+/* Hide the small logo and display the large logo by default */
+.logo-small {
+    width: 70px !important;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    /* Hide the large logo on small screens and show the small logo */
+    .logo-large {
+        display: none;
+    }
+    .logo-small {
+        display: block;
+    }
+}
+
 /* Slider Section */
 .slider-wrapper{
     position: absolute;
@@ -223,7 +239,34 @@ img{
     background-color: var(--brand-color2) !important;
 }
 
+/* Mobile Screen styles for slider */
+@media screen and (max-width: 768px){
+    .slide1 h1,
+    .slide2 h1,
+    .slide3 h1{
+        font-size: 20px;
+        font-weight: 600;
+    }
 
+    .slide1 h6,
+    .slide2 h6,
+    .slide3 h6{
+        font-size: 16px;
+        font-weight: 200;
+    }
+
+    .slide1 p,
+    .slide2 p,
+    .slide3 p{
+        font-size: 14px;
+        font-weight: 200;
+    }
+
+    .owl-prev,
+    .owl-next{
+        top: 90%;
+    }
+}
 
 
 
