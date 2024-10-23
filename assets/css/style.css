@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700&display=swap');
+
+/* Default Settings */
+:root{
+    --brand-color1: #7575A9;
+    --brand-color2: #8AB6D8;
+    --brand-color1-rgb: 117, 117, 169;
+    --brand-color2-rgb: 138, 182, 216;
+
+    --black: #000000;
+    --white: #ffffff;
+    --red: #dc1473;
+    --body-color: #ececec;
+
+    --box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+    --font-base: "Poppins", sans-serif;
+    --transition: all 0.5s ease;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;;
+}
+
+body{
+    line-height: 1.7;
+    font-family: var(--font-base);
+    background-color: var(--body-color);
+    height: 600vh;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: var(--brand-color1);
+    font-weight: 500;
+    transition: var(--transition);
+}
+a:hover{
+    color: var(--brand-color2);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.bg-cover{
+    background-position: center !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.bg-brand{
+    background-color: var(--brand-color2);
+}
+
+.btn{
+    padding: 9px 24px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn-brand{
+    background-color: var(--brand-color1);
+    color: var(--white);
+    border: 2px solid var(--brand-color1);
+}
+
+.btn-brand:hover{
+    background-color: var(--brand-color2);
+    color: var(--white);
+}
+
+.btn-outline{
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--brand-color2);
+}
+
+.btn-outline:hover{
+    background-color: var(--brand-color1);
+    color: var(--white);
+}
+/* End of Default Settings */
+
+/* Top-Bar Styles #####################################################################################################################*/
+.top-nav{
+    position: relative;
+    z-index: 1;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: var(--brand-color1);
+}
+
+.top-nav a{
+    font-size: 12px;
+    color: var(--white);
+}
+
+.top-nav i{
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.social-links a{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: var(--brand-color2);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-links a i{
+    font-size: 25px;
+}
+
+.social-links a:hover{
+    background-color: var(--white);
+    color: var(--brand-color2);
+}
+
+/* Navbar Styles #####################################################################################################################*/
+.navbar{
+    position: sticky;
+    z-index: 1;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.navbar-brand img{
+    width: 300px;
+}
+
+.navbar .navbar-nav .nav-link{
+    position: relative;
+    font-weight: 500;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active{
+    color: var(--red);
+}
+
+@media screen and (min-width: 991px){
+    .navbar .navbar-nav .nav-link::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        background-color: red;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 0;
+        background-color: var(--red);
+        border-radius: 25px;
+        transition: var(--transition);
+    }
+    
+    .navbar .navbar-nav .nav-link:hover::before,
+    .navbar .navbar-nav .nav-link.active::before{    
+        width: 80%;
+    }
+}
+
+.scrolled{
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(7.9px);
+    backdrop-filter: blur(7px);
+}
+
+/* Slider Section */
+.slider-wrapper{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+.slide1{
+    background: linear-gradient(rgba(var(--brand-color2-rgb), 0.9), rgba(var(--brand-color1-rgb), 0.5)),url('../img/slide1.jpg');
+}
+.slide2{
+    background: linear-gradient(rgba(var(--brand-color2-rgb), 0.9), rgba(var(--brand-color1-rgb), 0.5)),url('../img/slide2.jpg');
+}
+.slide3{
+    background-position: center;
+    background: linear-gradient(rgba(var(--brand-color2-rgb), 0.9), rgba(var(--brand-color1-rgb), 0.5)),url('../img/slide3.jpg');
+}
+
+/* OWL Slider */
+.owl-prev,
+.owl-next{
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%!important;
+    display: grid;
+    place-items: center;
+    background-color: rgba(var(--brand-color1-rgb), 0.5)!important;
+    font-size: 12px !important;
+    color: var(--white) !important;
+    transition: var(--transition);
+}
+
+.owl-prev{
+    left: 5px;
+}
+.owl-next{
+    right: 5px;
+}
+.owl-prev:hover,
+.owl-next:hover{
+    background-color: var(--brand-color2) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .top-nav{
+    color: var(--white);
+    height: 30px;
+    margin-bottom: 15px;
+    background-color: var(--brand-color1);
+}
+
+.top-nav a{
+    color: var(--white);
+}
+.top-nav a:hover{
+    color: var(--brand-color2);
+} */
+
+/* navigation bar styles #############################################################################################################*/
+/* .navabr{
+    background-color: transparent;
+    transition: var(--transition);
+}
+.navbar-brand img{
+    width: 300px;
+}
+
+.navbar .navbar-nav{    
+    padding-top: 40px;
+}
+
+.navbar .navbar-nav .nav-link{
+    position: relative;
+    font-weight: 400;    
+}
+
+.navbar .navbar-nav .nav-link.active{
+    font-weight: 600;
+    color: var(--brand-color1);
+}
+
+
+
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--brand-color2);
+}
+
+.scrolled{
+    background-color: var(--white);
+    box-shadow: 0 3px 10px rgb(0, 0, 0, 0.15);
+    transition: var(--transition)  ;
+} */
+
+/* Hero Section styles############################################################################################################## */
