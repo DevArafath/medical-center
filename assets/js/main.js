@@ -8,7 +8,7 @@ $(document).ready(function() {
         items: 1,
         smartSpeed: 1000,
         navText: ['PREV', 'NEXT'],
-		autoplay: false,
+		autoplay: true,
     	autoplayTimeout: 3000,
     	autoplayHoverPause: true,
         responsive: {
