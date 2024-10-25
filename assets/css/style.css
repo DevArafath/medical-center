@@ -94,6 +94,44 @@ img{
         font-weight: 300;
     }
 }
+
+.section-padding{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-title{
+    padding-bottom: 60px;
+}
+
+.section-title .section-line{
+    margin: 16px auto;
+    position: relative;
+    width: 400px;
+    height: 2px;
+}
+
+.section-line .thin-line{
+    width: 100%;
+    height: 2px;
+    background-color: var(--brand-color2);
+}
+
+.section-line .bold-line{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 7px;
+    border-radius: 25px;
+    background-color: var(--brand-color1);
+}
+
+.section-title p{
+    max-width: 1000px;
+    margin: auto;
+}
 /* End of Default Settings */
 
 /* Top-Bar Styles #####################################################################################################################*/
@@ -281,6 +319,9 @@ img{
 }
 
 
+  
+  
+  
 
 
 

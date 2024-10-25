@@ -9,8 +9,8 @@ $(document).ready(function() {
         smartSpeed: 1000,
         navText: ['PREV', 'NEXT'],
 		autoplay: true,
-    	autoplayTimeout: 3000,
-    	autoplayHoverPause: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
         responsive: {
             0: {},
             600: {},
