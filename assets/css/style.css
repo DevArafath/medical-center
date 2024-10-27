@@ -27,7 +27,6 @@ body{
     line-height: 1.7;
     font-family: var(--font-base);
     background-color: var(--body-color);
-    height: 600vh;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -131,6 +130,10 @@ img{
 .section-title p{
     max-width: 1000px;
     margin: auto;
+}
+
+.justify-text{
+    text-align: justify;
 }
 /* End of Default Settings */
 
@@ -318,12 +321,30 @@ img{
     }
 }
 
+/* About Clinic CSS */
+.dept-card{
+    background-color: var(--brand-color1);
+    padding: 15px;
+    margin: 7px;
+    border-radius: 10px;
+}
 
-  
-  
-  
+.dept-card p{
+    margin: 0;
+    font-weight: 500;
+}
+.dept-icon{
+    margin-bottom: 15px;
+    width: 75px;
+}
 
+.dept-card a{
+    opacity: 0;
+}
 
+.dept-card:hover a{
+    opacity: 1;
+}
 
 
 
