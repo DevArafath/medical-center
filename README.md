@@ -1,2 +1,2 @@
 # medical-center
-a web site for a medical center
+This website is designed specifically for [Medical Center Name] to provide patients with a seamless, user-friendly experience. Fully responsive, it adapts to any device, ensuring easy access to information about our services, doctors, and appointment scheduling on desktops, tablets, and smartphones. Explore our site for comprehensive healthcare information and resources tailored to meet your needs wherever you are.
