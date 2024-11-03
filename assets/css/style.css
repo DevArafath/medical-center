@@ -27,6 +27,7 @@ body{
     line-height: 1.7;
     font-family: var(--font-base);
     background-color: var(--body-color);
+    height: 300vh;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -346,61 +347,21 @@ img{
     opacity: 1;
 }
 
-
-
-
-
-
-
-
-
-/* .top-nav{
-    color: var(--white);
-    height: 30px;
-    margin-bottom: 15px;
-    background-color: var(--brand-color1);
+/* Facts Sub Section Styles */
+.facts-sub-sec{
+    padding: 90px 20px;
+    background: linear-gradient(rgba(var(--brand-color2-rgb), 0.8), rgba(var(--brand-color1-rgb), 1)),url('../img/facts-bg.jpg');
 }
 
-.top-nav a{
+.facts-sub-sec .display-4,
+.facts-sub-sec p{    
     color: var(--white);
 }
-.top-nav a:hover{
-    color: var(--brand-color2);
-} */
 
-/* navigation bar styles #############################################################################################################*/
-/* .navabr{
-    background-color: transparent;
-    transition: var(--transition);
-}
-.navbar-brand img{
-    width: 300px;
+.facts-sub-sec .display-4{
+    font-weight: 500;
 }
 
-.navbar .navbar-nav{    
-    padding-top: 40px;
+.facts-sub-sec p{
+    font-weight: 200;
 }
-
-.navbar .navbar-nav .nav-link{
-    position: relative;
-    font-weight: 400;    
-}
-
-.navbar .navbar-nav .nav-link.active{
-    font-weight: 600;
-    color: var(--brand-color1);
-}
-
-
-
-.navbar .navbar-nav .nav-link:hover{
-    color: var(--brand-color2);
-}
-
-.scrolled{
-    background-color: var(--white);
-    box-shadow: 0 3px 10px rgb(0, 0, 0, 0.15);
-    transition: var(--transition)  ;
-} */
-
-/* Hero Section styles############################################################################################################## */
