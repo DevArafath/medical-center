@@ -8,7 +8,7 @@ $(document).ready(function() {
         items: 1,
         smartSpeed: 1000,
         navText: ['PREV', 'NEXT'],
-		autoplay: false,
+		autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
         responsive: {
@@ -50,3 +50,73 @@ $(document).ready(function() {
         });
     });
 });
+
+// Vanilla JavaScript Code for Fact Counter
+document.addEventListener("DOMContentLoaded", function() {
+    const counters = document.querySelectorAll(".fact-counter");
+
+    function getRandomChar() {
+        // const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"; //this line is for the randomize chars
+        const chars = "+/*.%kM";
+        return chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+
+    function startCounting(counter) {
+        const countTo = parseInt(counter.getAttribute("data-count"), 10);
+        const finalText = counter.getAttribute("data-text").split("");
+        let currentCount = 0;
+        let randomText = Array(finalText.length).fill("").map(() => getRandomChar());
+
+        // Randomize numbers and text for 2 seconds
+        const randomInterval = setInterval(() => {
+            counter.innerText = `${Math.floor(Math.random() * countTo)} ${randomText.join("")}`;
+            randomText = randomText.map(() => getRandomChar()); // Randomize each letter
+        }, 50);
+
+        // After 2 seconds, clear interval and start revealing final text and count
+        setTimeout(() => {
+            clearInterval(randomInterval);
+            
+            // Smooth transition to the final count
+            const finalInterval = setInterval(() => {
+                currentCount += Math.ceil(countTo / 50);
+                counter.innerText = `${currentCount > countTo ? countTo : currentCount} ${randomText.join("")}`;
+
+                if (currentCount >= countTo) {
+                    clearInterval(finalInterval);
+                }
+            }, 20);
+
+            // Reveal final text letters one by one
+            let revealIndex = 0;
+            const textRevealInterval = setInterval(() => {
+                if (revealIndex < finalText.length) {
+                    randomText[revealIndex] = finalText[revealIndex]; // Reveal one letter at a time
+                    counter.innerText = `${countTo} ${randomText.join("")}`;
+                    revealIndex++;
+                } else {
+                    clearInterval(textRevealInterval);
+                }
+            }, 100); // Adjust speed for revealing letters
+        }, 2000);
+    }
+
+    // Set up IntersectionObserver to trigger counting each time it enters the view
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    startCounting(entry.target); // Start counting each time it's in view
+                }
+            });
+        },
+        { threshold: 0.5 } // Trigger when 50% of the section is visible
+    );
+
+    // Observe each counter
+    counters.forEach(counter => {
+        observer.observe(counter);
+    });
+});
+
+    
