@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function getRandomChar() {
         // const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"; //this line is for the randomize chars
-        const chars = "+/*.%kM";
+        const chars = "+-/*%kM";
         return chars.charAt(Math.floor(Math.random() * chars.length));
     }
 
@@ -119,4 +119,35 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// Service Filter using Isotope JS
+let portfolioIsotope = document.querySelector('.portfolio-isotope')
+
+if (portfolioIsotope) {
+    let portfolioFilter = portfolioIsotope.getAttribute('data-portfolio-filter') ? portfolioIsotope.getAttribute('data-portfolio-filter') : '*'
+    let portfolioLayout = portfolioIsotope.getAttribute('data-portfolio-layout') ? portfolioIsotope.getAttribute('data-portfolio-layout') : 'masonry'
+    let portfolioSort = portfolioIsotope.getAttribute('data-portfolio-sort') ? portfolioIsotope.getAttribute('data-portfolio-sort') : 'original-order'
+
+    window.addEventListener('load', () => {
+        let portfolio_Isotope = new Isotope(document.querySelector('.portfolio-container'), {
+            itemSelector: '.portfolio-item',
+            layoutMode: portfolioLayout,
+            filter: portfolioFilter,
+            sortBy: portfolioSort,
+        })
+
+        let menuFilters = document.querySelectorAll('.portfolio-isotope .portfolio-filter li')
+        menuFilters.forEach(function (e) {
+            e.addEventListener('click', function () {
+                document.querySelector('.portfolio-isotope .portfolio-filter .filter-active').classList.remove('filter-active')
+                this.classList.add('filter-active')
+                portfolio_Isotope.arrange({
+                    filter: this.getAttribute('data-filter')
+                })
+                if (typeof aos_init === 'function') {
+                    aos_init()
+                }
+            }, false)
+        })
+    })
+}
     

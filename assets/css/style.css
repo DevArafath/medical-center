@@ -27,7 +27,6 @@ body{
     line-height: 1.7;
     font-family: var(--font-base);
     background-color: var(--body-color);
-    height: 300vh;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -178,7 +177,7 @@ img{
 /* Navbar Styles #####################################################################################################################*/
 .navbar{
     position: sticky;
-    z-index: 1;
+    z-index: 999;
     box-shadow: var(--box-shadow);
     transition: var(--transition);
     background: rgba(255, 255, 255, 0.65);
@@ -364,4 +363,76 @@ img{
 
 .facts-sub-sec p{
     font-weight: 200;
+}
+
+/* Services section styles */
+.portfolio-filter{
+    padding: 0 0 20px 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.portfolio-filter li{
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 10px;
+    line-height: 1;
+    border: 1px solid var(--brand-color1);
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.portfolio-filter li:hover,
+.portfolio-filter li.filter-active{
+    color: var(--brand-color1);
+}
+
+.portfolio-container .portfolio-wrap{
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    height: 100%;
+    overflow: hidden;    
+}
+
+.portfolio-wrap img{
+    transition: var(--transition);
+}
+
+.portfolio-wrap:hover img{
+    transform: scale(1.1);
+}
+
+.portfolio-wrap .portfolio-info{
+    padding: 25px 20px;
+    background-color: var(--brand-color2);
+    position: relative;
+    border-top: 2px solid var(--brand-color1);
+    transition: var(--transition);
+    z-index: 2;
+}
+
+.portfolio-wrap:hover .portfolio-info{
+    background-color: var(--brand-color1);
+}
+
+.portfolio-wrap .portfolio-info a{
+    color: var(--white);
+    font-weight: 600;
+}
+
+.portfolio-wrap .portfolio-info p{
+    font-size: 14px;
+}
+
+/* responsive for mobile */
+@media screen and (max-width: 575px) {
+    .portfolio-filter li{
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
 }
