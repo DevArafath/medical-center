@@ -119,6 +119,11 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    AOS.init(); // Initialize AOS
+});
+
+
 // Service Filter using Isotope JS
 let portfolioIsotope = document.querySelector('.portfolio-isotope')
 
@@ -142,12 +147,10 @@ if (portfolioIsotope) {
                 this.classList.add('filter-active')
                 portfolio_Isotope.arrange({
                     filter: this.getAttribute('data-filter')
-                })
-                if (typeof aos_init === 'function') {
-                    aos_init()
-                }
-            }, false)
-        })
+                });
+                AOS.refresh(); // Refresh AOS animations after filtering
+            }, false);
+        });
     })
 }
     
