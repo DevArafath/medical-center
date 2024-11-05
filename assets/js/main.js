@@ -18,6 +18,18 @@ $(document).ready(function() {
         }
     });
 
+    // Slider for Ttestomonials / Reviews
+    $('#reviews-slider').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: true,
+        items: 1,
+        smartSpeed: 2000,
+        autoplay: true,
+        autoplayTimeout: 7000,   
+    });
+
     // Scroll event to add class to navbar and set active link######################################################################################################
     $(window).scroll(function() {
         var scrollPosition = $(this).scrollTop(); // Get current scroll position
@@ -191,7 +203,7 @@ workingHours.forEach((item, index) => {
     container.appendChild(pill);
 });
 
-// Get the button#####################################################################################################
+// Get to the TOP button#####################################################################################################
 const goToTopButton = document.getElementById("goToTop");
 
 // Show or hide the button based on scroll position
