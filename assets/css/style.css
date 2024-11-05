@@ -139,6 +139,32 @@ img{
 .justify-text{
     text-align: justify;
 }
+
+#goToTop {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    right: 30px;  /* Distance from the right */
+    font-size: 25px;
+    display: none; /* Hidden by default */
+    background-color: var(--brand-color1); /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 50%; /* Rounded button */
+    cursor: pointer; /* Pointer cursor on hover */
+    z-index: 1000;
+    width: 50px; /* Set width */
+    height: 50px; /* Set height */
+}
+
+#goToTop i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#goToTop:hover {
+    background-color: var(--brand-color2); /* Darker shade on hover */
+}
 /* End of Default Settings */
 
 /* Top-Bar Styles #####################################################################################################################*/
@@ -487,7 +513,7 @@ img{
     }
 }
 
-/* About Us Styles */
+/* About Us Styles #####################################################################################################################*/
 .about-us-wrapper img{
     border-radius: 15px;
     box-shadow: var(--box-shadow);
@@ -508,11 +534,13 @@ img{
     color: var(--brand-color1);
     cursor: pointer;
     border: 2px solid var(--brand-color1);
+    transition: var(--transition);
 }
 
 /* Highlight the current day */
 .working-hour-pill.today {
     background-color: var(--brand-color1);
+    font-weight: 500;
     color: #fff;
 }
 .working-hour-pill.today.closed{
@@ -527,6 +555,7 @@ img{
 }
 
 .working-hour-pill:hover{
+    font-weight: 500;
     background-color: var(--brand-color2);
     border: 2px solid var(--brand-color2);
 }
@@ -555,28 +584,36 @@ img{
     }
 }
 
-#goToTop {
-    position: fixed;
-    bottom: 20px; /* Distance from the bottom */
-    right: 30px;  /* Distance from the right */
-    font-size: 25px;
-    display: none; /* Hidden by default */
-    background-color: var(--brand-color1); /* Button color */
-    color: white; /* Text color */
-    border: none; /* No border */
-    border-radius: 50%; /* Rounded button */
-    cursor: pointer; /* Pointer cursor on hover */
-    z-index: 1000;
-    width: 50px; /* Set width */
-    height: 50px; /* Set height */
+/* Testomonial Section Styles ##################################################################################################################*/
+#testomonial{
+    background: linear-gradient(rgba(var(--brand-color2-rgb), 0.9), rgba(var(--brand-color1-rgb), 0.5)),url('../img/review.jpg');
 }
 
-#goToTop i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.review{
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
 }
 
-#goToTop:hover {
-    background-color: var(--brand-color2); /* Darker shade on hover */
+.review img{
+    margin: auto;
+    border-radius: 100%;
+    width: 85px!important;
+}
+
+.review h4,
+.review p{
+    color: var(--white);
+}
+
+.review small{
+    margin-top: 0;
+}
+
+.review p{
+    margin-top: 25px;
+}
+
+.owl-dot.active span{
+    background-color: var(--brand-color1)!important;
 }
