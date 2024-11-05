@@ -18,7 +18,7 @@ $(document).ready(function() {
         }
     });
 
-    // Scroll event to add class to navbar and set active link
+    // Scroll event to add class to navbar and set active link######################################################################################################
     $(window).scroll(function() {
         var scrollPosition = $(this).scrollTop(); // Get current scroll position
         var navbar = $('.navbar'); // Select the navbar
@@ -51,7 +51,7 @@ $(document).ready(function() {
     });
 });
 
-// Vanilla JavaScript Code for Fact Counter
+// Vanilla JavaScript Code for Fact Counter######################################################################################################
 document.addEventListener("DOMContentLoaded", function() {
     const counters = document.querySelectorAll(".fact-counter");
 
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// Service Filter using Isotope JS
+// Service Filter using Isotope JS######################################################################################################
 let portfolioIsotope = document.querySelector('.portfolio-isotope')
 
 if (portfolioIsotope) {
@@ -153,4 +153,41 @@ if (portfolioIsotope) {
         });
     })
 }
+
+// Define working hours for each day of the week######################################################################################################
+const workingHours = [
+    { day: 'Sunday', hours: '9:00 AM - 9:00 PM' },
+    { day: 'Monday', hours: '9:00 AM - 9:00 PM' },
+    { day: 'Tuesday', hours: '9:00 AM - 9:00 PM' },
+    { day: 'Wednesday', hours: '9:00 AM - 9:00 PM' },
+    { day: 'Thursday', hours: '9:00 AM - 9:00 PM' },
+    { day: 'Friday', hours: 'Closed' },
+    { day: 'Saturday', hours: '9:00 AM - 9:00 PM' }
+];
+
+// Get the current day index (0 = Sunday, 6 = Saturday)
+const todayIndex = new Date().getDay();
+
+// Get the container to append pills
+const container = document.getElementById('working-hours');
+
+// Loop through working hours and create a pill for each day
+workingHours.forEach((item, index) => {
+    const pill = document.createElement('div');
+    pill.classList.add('working-hour-pill', 'btn', 'btn-primary');
+
+    // Add 'today' class if it’s the current day
+    if (index === todayIndex) {
+        pill.classList.add('today');
+    }
+
+    // Add 'closed' class if the hours indicate "Closed"
+    if (item.hours === 'Closed') {
+        pill.classList.add('closed');
+    }
+
+    // Set the inner text to display day and hours
+    pill.textContent = `${item.day}: ${item.hours}`;
+    container.appendChild(pill);
+});
     
