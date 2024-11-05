@@ -17,6 +17,10 @@
     --transition: all 0.5s ease;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -549,4 +553,30 @@ img{
     50% {
         transform: scale(1);
     }
+}
+
+#goToTop {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    right: 30px;  /* Distance from the right */
+    font-size: 25px;
+    display: none; /* Hidden by default */
+    background-color: var(--brand-color1); /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 50%; /* Rounded button */
+    cursor: pointer; /* Pointer cursor on hover */
+    z-index: 1000;
+    width: 50px; /* Set width */
+    height: 50px; /* Set height */
+}
+
+#goToTop i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#goToTop:hover {
+    background-color: var(--brand-color2); /* Darker shade on hover */
 }

@@ -190,4 +190,25 @@ workingHours.forEach((item, index) => {
     pill.textContent = `${item.day}: ${item.hours}`;
     container.appendChild(pill);
 });
+
+// Get the button#####################################################################################################
+const goToTopButton = document.getElementById("goToTop");
+
+// Show or hide the button based on scroll position
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        goToTopButton.style.display = "block";
+    } else {
+        goToTopButton.style.display = "none";
+    }
+};
+
+// Scroll to top function
+goToTopButton.onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scroll
+    });
+};
+
     
