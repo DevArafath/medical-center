@@ -491,3 +491,47 @@ img{
 .about-us-wrapper p{
     font-size: 14px;
 }
+
+/* Working Houser Styles */
+/* Styling each pill */
+.working-hour-pill {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: var(--brand-color1);
+    cursor: pointer;
+    border: 2px solid var(--brand-color1);
+}
+
+/* Highlight the current day */
+.working-hour-pill.today {
+    background-color: var(--brand-color1);
+    color: #fff;
+}
+.working-hour-pill.today.closed{
+    color: rgb(255, 255, 255);
+    border: 2px solid red;
+    background-color: red;
+}
+/* Styling for closed days */
+.working-hour-pill.closed {
+    color: red;
+    border: 2px solid red;
+}
+
+.working-hour-pill:hover{
+    background-color: var(--brand-color2);
+    border: 2px solid var(--brand-color2);
+}
+
+/* Responsive behavior for mobile view */
+@media (max-width: 576px) {
+    .working-hour-pill {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
