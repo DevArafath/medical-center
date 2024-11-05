@@ -482,3 +482,12 @@ img{
         font-size: 12px;
     }
 }
+
+/* About Us Styles */
+.about-us-wrapper img{
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+}
+.about-us-wrapper p{
+    font-size: 14px;
+}
