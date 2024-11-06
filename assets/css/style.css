@@ -301,12 +301,16 @@ img{
 .slide1{
     background: url('../img/slide1.jpg');
 }
+.slide1 h6{
+    color: var(--black);
+}
 .slide2{
     background: url('../img/slide2.jpg');
 }
 .slide3{
     background-position: center;
-    background: linear-gradient(rgba(var(--brand-color2-rgb), 0.9), rgba(var(--brand-color1-rgb), 0.5)),url('../img/slide3.jpg');
+    /* background: linear-gradient(rgba(var(--brand-color2-rgb), 0.9), rgba(var(--brand-color1-rgb), 0.5)),url('../img/slide3.jpg'); */
+    background: url('../img/slide3.jpg');
 }
 
 /* OWL Slider */
