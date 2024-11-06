@@ -655,6 +655,11 @@ footer p{
     font-size: 12px;
 }
 
+.footer-top .social-links a{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .footer-bottom p{
     margin-top: 25px;
     font-size: 11px;
