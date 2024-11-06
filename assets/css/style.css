@@ -669,3 +669,17 @@ footer p{
     color: red ;
 }
 
+/* Contact form Style */
+.form-control:focus{
+    box-shadow: none;
+    border-color: var(--brand-color1);
+    background-color: rgba(var(--brand-color2-rgb),0.2);
+}
+
+.form-control{
+    background-color: rgba(var(--brand-color2-rgb),0.5);
+}
+
+textarea{
+    resize: none;
+}
