@@ -493,7 +493,7 @@ img{
 
 .portfolio-wrap:hover img{
     transform: scale(1.1);
-    background: red;
+    background: var(--brand-color1);
 }
 
 .portfolio-wrap .portfolio-info{
