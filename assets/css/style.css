@@ -252,6 +252,7 @@ img{
     }
 }
 
+/* Add a White Glass Background for Navbar Tab and Mobiel Screen */
 @media screen and (max-width: 1200px) {
     .navbar{
         position: sticky;
@@ -630,3 +631,30 @@ img{
 .owl-dot.active span{
     background-color: var(--brand-color1)!important;
 }
+
+/* footer styles */
+footer{
+    text-align: center;
+    color: var(--white);
+    padding-top: 80px;
+    background: linear-gradient(rgba(236, 236, 236, 1), rgba(var(--brand-color1-rgb), 0.5)),url('../img/footer.jpg');
+    background-position: center; /* Center image horizontally and vertically */
+    background-size: cover; /* Make sure image covers the entire area */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+}
+
+.footer-top p{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.footer-bottom p{
+    padding-bottom: 25px;
+    margin-top: 25px;
+    font-size: 11px;
+}
+
+.footer-bottom p i{
+    color: red ;
+}
+
