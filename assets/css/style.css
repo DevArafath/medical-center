@@ -208,12 +208,12 @@ img{
 .navbar{
     position: sticky;
     z-index: 999;
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
     transition: var(--transition);
-    background: rgba(255, 255, 255, 0.65);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    -webkit-backdrop-filter: blur( 2px );
-    backdrop-filter: blur( 2px );
+    /* background: rgba(255, 255, 255, 0.65); */
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    /* -webkit-backdrop-filter: blur( 2px ); */
+    /* backdrop-filter: blur( 2px ); */
     border-radius: 0 0 10px 10px;
 }
 
@@ -252,6 +252,19 @@ img{
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .navbar{
+        position: sticky;
+        z-index: 999;
+        transition: var(--transition);
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        -webkit-backdrop-filter: blur( 2px );
+        backdrop-filter: blur( 2px );
+        border-radius: 0 0 10px 10px;
+    }
+}
+
 .scrolled{
     box-shadow: var(--box-shadow);
     background: var(--white);
@@ -274,7 +287,7 @@ img{
     }
     .logo-small {
         display: block;
-    }
+    }   
 }
 
 /* Slider Section #####################################################################################################################*/
