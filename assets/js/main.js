@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const target = +counter.getAttribute("data-count");
         const suffix = counter.getAttribute("data-text") || "";
         let count = 0;
-        const increment = 2;  // Step count by 10
+        const increment = 1;  // Step count by 10
 
         const countUp = setInterval(() => {
             count += increment;
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 counter.textContent = count + suffix;
             }
-        }, 20);  // Adjust interval duration to control speed More the Number is Slower
+        }, 10);  // Adjust interval duration to control speed More the Number is Slower Default is 20
     };
 
     const observer = new IntersectionObserver(entries => {
