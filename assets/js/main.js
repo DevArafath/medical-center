@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const randomInterval = setInterval(() => {
             counter.innerText = `${Math.floor(Math.random() * countTo)} ${randomText.join("")}`;
             randomText = randomText.map(() => getRandomChar()); // Randomize each letter
-        }, 50);
+        }, 10); //Default was 50
 
         // After 2 seconds, clear interval and start revealing final text and count
         setTimeout(() => {
@@ -222,5 +222,19 @@ goToTopButton.onclick = function() {
         behavior: 'smooth' // Smooth scroll
     });
 };
+
+// Footer Image Change Based on Time of the Day
+document.addEventListener("DOMContentLoaded", function() {
+    const footer = document.getElementById("footer");
+    const hour = new Date().getHours();
+
+    // Apply 'morning' background if between 6 AM and 6 PM, else apply 'night'
+    if (hour >= 6 && hour < 18) {
+        footer.classList.add("footer-morning");
+    } else {
+        footer.classList.remove("footer-morning");
+    }
+});
+
 
     

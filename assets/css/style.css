@@ -639,10 +639,18 @@ footer{
     color: var(--white);
     padding-top: 80px;
     padding-bottom: 25px;
-    background: linear-gradient(rgba(236, 236, 236, 1), rgba(var(--brand-color1-rgb), 0.5)),url('../img/footer.jpg');
+    background: linear-gradient(rgba(236, 236, 236, 1), rgba(var(--brand-color1-rgb), 0.5)),url('../img/footer_night.jpg');
     background-position: center; /* Center image horizontally and vertically */
     background-size: cover; /* Make sure image covers the entire area */
     background-repeat: no-repeat; /* Prevent image from repeating */
+}
+
+/* Footer BG change in morning */
+.footer-morning {
+    background: linear-gradient(rgba(236, 236, 236, 1), rgba(var(--brand-color1-rgb), 0.5)), url('../img/footer.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 footer p{
@@ -669,7 +677,7 @@ footer p{
     color: red ;
 }
 
-/* Contact form Style */
+/* Contact form Style ###########################################################################*/
 .form-control:focus{
     box-shadow: none;
     border-color: var(--brand-color1);
