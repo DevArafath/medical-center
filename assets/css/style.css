@@ -634,22 +634,28 @@ img{
 
 /* footer styles */
 footer{
+    margin-bottom: 0;
     text-align: center;
     color: var(--white);
     padding-top: 80px;
+    padding-bottom: 25px;
     background: linear-gradient(rgba(236, 236, 236, 1), rgba(var(--brand-color1-rgb), 0.5)),url('../img/footer.jpg');
     background-position: center; /* Center image horizontally and vertically */
     background-size: cover; /* Make sure image covers the entire area */
     background-repeat: no-repeat; /* Prevent image from repeating */
 }
 
+footer p{
+    margin: 0;
+}
+
 .footer-top p{
     margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 12px;
 }
 
 .footer-bottom p{
-    padding-bottom: 25px;
     margin-top: 25px;
     font-size: 11px;
 }
