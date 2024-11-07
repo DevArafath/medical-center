@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 counter.textContent = count + suffix;
             }
-        }, 10);  // Adjust interval duration to control speed More the Number is Slower Default is 20
+        }, 50);  // Adjust interval duration to control speed More the Number is Slower Default is 20
     };
 
     const observer = new IntersectionObserver(entries => {
