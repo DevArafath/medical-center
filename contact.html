@@ -119,9 +119,55 @@
             <p>Call Our Call Center: (+974) 55779248 | 66777318 | 44823673 | 44809380</p>
             <div>
                 <a href="tel:+97444823673" class="btn btn-brand mt-3"><img src="./assets/img/ring.gif" style="width: 25px;" class="me-1"> Call Us Now for Inquiries</a>    
-                <a href="mailto:alshaheenmedical@gmail.com" class="btn btn-brand mt-3"><img src="./assets/img/mail.gif" style="width: 25px;" class="me-1"> Get Connected via Email</a>    
+                <a href="" class="btn btn-brand mt-3" data-bs-toggle="modal" data-bs-target="#contactModal"><img src="./assets/img/mail.gif" style="width: 25px;" class="me-1"> Get Connected via Email</a>    
             </div>
             
+        </div>
+    </div>
+
+    <!-- !Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">            
+            <div class="modal-body p-0 mb-3 mb-lg-0">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-4 bg-cover" style="background-image: url(./assets/img/contact.jpg); min-height: 300px; border-radius: 7px 0 0 0;"></div>
+                        <div class="col-lg-8">
+                            <form action="" class="row p-lg-5 gy-3 mt-3">
+                                <div class="col-12">
+                                    <h1>Get in Touch</h1>
+                                    <p>Reach out to us for appointments, inquiries, or personalized healthcare guidance.</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="name" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" placeholder="First Name">
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="name" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" placeholder="Last Name">
+                                </div>
+                                <div class="col-12">
+                                    <label for="name" class="form-label">Your Email</label>
+                                    <input type="text" class="form-control" placeholder="sample@email.com">
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea name="message" id="message" rows="4" class="form-control" placeholder="Enter your message"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="button" class="btn btn-brand">Send Message</button>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer" style="background-color: var(--brand-color1);">
+                
+            </div>
+            </div>
         </div>
     </div>
 
