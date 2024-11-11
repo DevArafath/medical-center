@@ -18,7 +18,7 @@ $(document).ready(function() {
         }
     });
 
-    // Slider for Ttestomonials / Reviews
+    // Slider for Testomonials / Reviews
     $('#reviews-slider').owlCarousel({
         loop: true,
         margin: 10,
