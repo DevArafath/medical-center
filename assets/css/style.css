@@ -299,9 +299,7 @@ img{
     left: 0;
 }
 
-.slide1 h6, .slide1 h1, .slide1 p,
-.slide2 h6, .slide2 h1, .slide2 p,
-.slide3 h6, .slide3 h1, .slide3 p{
+.slide1, .slide2, .slide3, .slide4, .slide5, .slide6, .slide7, .slide8, .slide9, .slide10{
     text-shadow: 2px 2px 15px black;
 }
 
@@ -366,27 +364,6 @@ img{
 
 /* Mobile Screen styles for slider */
 @media screen and (max-width: 768px){
-    .slide1 h1,
-    .slide2 h1,
-    .slide3 h1{
-        font-size: 20px;
-        font-weight: 600;
-    }
-
-    .slide1 h6,
-    .slide2 h6,
-    .slide3 h6{
-        font-size: 16px;
-        font-weight: 200;
-    }
-
-    .slide1 p,
-    .slide2 p,
-    .slide3 p{
-        font-size: 14px;
-        font-weight: 200;
-    }
-
     .owl-prev,
     .owl-next{
         top: 90%;
