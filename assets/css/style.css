@@ -298,21 +298,43 @@ img{
     top: 0;
     left: 0;
 }
-.slide1{
-    background: url('../img/slide1.jpg');
-}
+
 .slide1 h6, .slide1 h1, .slide1 p,
 .slide2 h6, .slide2 h1, .slide2 p,
 .slide3 h6, .slide3 h1, .slide3 p{
     text-shadow: 2px 2px 15px black;
 }
-.slide2{
-    background: url('../img/slide2.jpg');
-}
-.slide3{
-    background-position: center;
+
+.slide1{
+    background: url('../img/diagnostic_and_treatment_center.jpeg');
     /* background: linear-gradient(rgba(var(--brand-color2-rgb), 0.9), rgba(var(--brand-color1-rgb), 0.5)),url('../img/slide3.jpg'); */
-    background: url('../img/slide3.jpg');
+}
+.slide2{
+    background: url('../img/obstetrics_gynecology.jpg');
+}
+.slide3{   
+    background: url('../img/infertility_treatment.jpeg');
+}
+.slide4{   
+    background: url('../img/Ivf_and_Icsi.jpeg');
+}
+.slide5{   
+    background: url('../img/ent_services.jpeg');
+}
+.slide6{   
+    background: url('../img/skin_care.jpg');
+}
+.slide7{   
+    background: url('../img/lpg_machine_massage.jpg');
+}
+.slide8{   
+    background: url('../img/laser_treatment.jpeg');
+}
+.slide9{   
+    background: url('../img/pharmacy.jpeg');
+}
+.slide10{   
+    background: url('../img/cafe.jpeg');
 }
 
 /* OWL Slider */
