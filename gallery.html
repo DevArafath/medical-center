@@ -39,8 +39,46 @@
     <!-- Lightbox Gallery CSS -->
     <link rel="stylesheet" href="./assets/css/lightbox.min.css">
 
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        /* BG Image for top */
+        .bg-img-wrapper {
+            position: absolute;
+            height: 350px;
+            width: 100vw;
+        }
+
+        .bg-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -2;
+        }
+
+        .bg-img-wrapper::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(var(--brand-color1-rgb), 0.1), rgba(236, 236, 236, 1));
+            z-index: -1;
+        }
+    </style>
+
 </head>
 <body>
+
+    <div class="bg-img-wrapper">
+        <img class="bg-img bg-cover" src="./assets/img/insurance_qatar.jpg" alt="Life Medical Insurance in Qatar">
+    </div>
+
     <!-- !Navigation Section -->
     <nav class="navbar navbar-expand-xl sticky-top">
         <div class="container">
@@ -83,21 +121,36 @@
         </div>
     </nav>
 
-    <div class="container mt-5">
+    <div class="container section-padding">
+
+        <!-- Title Row for Each Section -->
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="section-title">
+                    <h1>Our Expertise in Focus</h1>
+                    <div class="section-line">
+                        <div class="thin-line" data-aos="zoom-in"></div>
+                        <div class="bold-line"></div>
+                    </div>
+                    <p>Explore our state-of-the-art medical facilities and compassionate care through these snapshots.</p>
+                </div>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-lg-4 mb-3">
-                <a href="./images/WhatsApp Image 2024-11-14 at 15.01.41 (1).jpeg" data-lightbox="mygallery" data-title="Image1">
-                    <img src="./images/WhatsApp Image 2024-11-14 at 15.01.41 (1).jpeg" alt="" class="img-fluid">
+                <a href="./images/day_care_surgery.jpeg" data-lightbox="mygallery" data-title="Day Care Surgery">
+                    <img src="./images/day_care_surgery.jpeg" alt="" class="img-fluid rounded-4">
                 </a>
             </div>
             <div class="col-lg-4 mb-3">
-                <a href="./images/WhatsApp Image 2024-11-14 at 15.01.41.jpeg" data-lightbox="mygallery" data-title="Image2">
-                    <img src="./images/WhatsApp Image 2024-11-14 at 15.01.41.jpeg" alt="" class="img-fluid">
+                <a href="./images/friendly_reception.jpeg" data-lightbox="mygallery" data-title="Best Customer Service">
+                    <img src="./images/friendly_reception.jpeg" alt="" class="img-fluid rounded-4">
                 </a>
             </div>
             <div class="col-lg-4 mb-3">
-                <a href="./images/WhatsApp Image 2024-11-14 at 15.01.43 (1).jpeg" data-lightbox="mygallery" data-title="Image3">
-                    <img src="./images/WhatsApp Image 2024-11-14 at 15.01.43 (1).jpeg" alt="" class="img-fluid">
+                <a href="./images/laser_treatment.jpeg" data-lightbox="mygallery" data-title="Our High End Laser Machines">
+                    <img src="./images/laser_treatment.jpeg" alt="" class="img-fluid rounded-4">
                 </a>
             </div>
         </div>

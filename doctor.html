@@ -32,8 +32,44 @@
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        /* BG Image for top */
+        .bg-img-wrapper {
+            position: absolute;
+            height: 350px;
+            width: 100vw;
+        }
+
+        .bg-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -2;
+        }
+
+        .bg-img-wrapper::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(var(--brand-color1-rgb), 0.1), rgba(236, 236, 236, 1));
+            z-index: -1;
+        }
+    </style>
 </head>
 <body>
+
+    <div class="bg-img-wrapper">
+        <img class="bg-img bg-cover" src="./assets/img/insurance_qatar.jpg" alt="Life Medical Insurance in Qatar">
+    </div>
 
     <!-- !Navigation Section -->
     <nav class="navbar navbar-expand-xl sticky-top">
