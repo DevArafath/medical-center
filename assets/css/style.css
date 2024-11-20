@@ -204,6 +204,7 @@ img{
     color: var(--brand-color2);
 }
 
+
 /* Navbar Styles #####################################################################################################################*/
 .navbar{
     position: sticky;
@@ -326,13 +327,13 @@ img{
     background: url('../img/lpg_machine_massage.jpg');
 }
 .slide8{   
-    background: url('../img/laser_treatment.jpeg');
+    background: url('../img/laser_treatment.jpg');
 }
 .slide9{   
     background: url('../img/pharmacy.jpeg');
 }
 .slide10{   
-    background: url('../img/cafe.jpeg');
+    background: url('../img/inpatient_care1.jpeg');
 }
 
 /* OWL Slider */
