@@ -32,6 +32,9 @@
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
+    <!-- Lightbox Gallery CSS -->
+    <link rel="stylesheet" href="./assets/css/lightbox.min.css">
+
     <style>
         body{
             overflow-x: hidden;
@@ -130,7 +133,7 @@
                             <div class="thin-line" data-aos="zoom-in"></div>
                             <div class="bold-line"></div>
                         </div>
-                        <p>Our inpatient care rooms are equipped with private bathrooms, advanced amenities, and cozy furnishings, creating an environment tailored for efficient healing and the utmost comfort during recovery.</p>
+                        <p>Our inpatient rooms offer a comfortable and private setting for recovery, equipped with modern amenities. Each room includes accommodations for companions, ensuring patients have the emotional support they need throughout their healing journey.</p>
                     </div>
                 </div>
             </div>
@@ -138,7 +141,9 @@
             <div class="row gx-3 gy-4 pb-3 mb-5 pb-lg-3 mb-lg-3 justify-content-around align-items-center">
                 <div class="col-md-6 col-lg-5">
                     <div>
-                        <img src="./assets/img/inpaitent1.jpeg" class="rounded-4">
+                        <a href="./assets/img/inpaitent1.jpeg" data-lightbox="mygallery" data-title="Modern Patient Rooms">
+                            <img src="./assets/img/inpaitent1.jpeg" class="rounded-4">
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-5">
@@ -152,21 +157,25 @@
             <div class="row gx-3 gy-4 pb-3 mb-5 pb-lg-3 mb-lg-3 justify-content-around align-items-center flex-row-reverse">
                 <div class="col-md-6 col-lg-5">
                     <div>
-                        <img src="./assets/img/inpaitent2.jpeg" class="rounded-4">
+                        <a href="./assets/img/inpaitent2.jpeg" data-lightbox="mygallery" data-title="Comanion Accommodation">
+                            <img src="./assets/img/inpaitent2.jpeg" class="rounded-4">
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-5">
                     <div class="portfolio-text">
                         <span>AL SHAHEEN MEDICAL</span>
                         <h4>Companion Accommodation</h4>
-                        <p>Each room includes a comfortable bed for companions, allowing loved ones to stay close and provide emotional support, fostering a comforting and caring recovery experience for the patient.</p>
+                        <p>Each room includes a comfortable bed for companions, allowing family members or friends to stay close and provide emotional support, fostering a comforting and caring recovery experience for the patient.</p>
                     </div>
                 </div>
             </div>
             <div class="row gx-3 gy-4 pb-3 mb-5 pb-lg-3 mb-lg-3 justify-content-around align-items-center">
                 <div class="col-md-6 col-lg-5">
                     <div>
-                        <img src="./assets/img/inpaitent3.jpeg" class="rounded-4">
+                        <a href="./assets/img/inpaitent3.jpeg" data-lightbox="mygallery" data-title="Well-Equipped Facilities">
+                            <img src="./assets/img/inpaitent3.jpeg" class="rounded-4">
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-5">
@@ -239,6 +248,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     <!-- JS CDN for Filter Type -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- JS for Lightbox Gallery -->
+    <script src="./assets/js/lightbox-plus-jquery.min.js"></script>
     <!-- Owl Carousel CDN -->
     <script src="./assets/js/owl.carousel.min.js"></script>
     <!-- AOS JavaScript -->
