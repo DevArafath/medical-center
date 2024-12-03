@@ -31,6 +31,21 @@
     <!-- Custom CSS File -->
     <link rel="stylesheet" href="./assets/css/contact_styles.css">
 
+    <style>
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .whatsapp-btn:hover {
+            background-color: #1DA851;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -112,7 +127,7 @@
             <p>Call Our Call Center: (+974) 55779248 | 66777318 | 44823673 | 44809380</p>
             <div>
                 <a href="tel:+97444823673" class="btn btn-brand mt-3"><img src="./assets/img/ring.gif" style="width: 25px;" class="me-1"> Call Us Now for Inquiries</a>    
-                <a class="btn btn-brand mt-3" onclick="openWhatsApp()"><img src="./assets/img/whatsapp.gif" style="width: 25px;" class="me-1"> Connect using WhatsApp</a>    
+                <a class="btn whatsapp-btn mt-3" onclick="openWhatsApp()"><img src="./assets/img/whatsapp.gif" style="width: 25px;" class="me-1"> Connect using WhatsApp</a>    
                 <script>
                     function openWhatsApp() {
                         const phoneNumber = "+97477375047"; // Replace with the phone number in international format
