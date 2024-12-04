@@ -1,0 +1,172 @@
+{
+    "obstetrics_and_gynecology_services": {
+        "title": "Obstetrics and Gynecology Services",
+        "description": "Obstetrics & Gynecology provides comprehensive care for women, including prenatal care, fertility treatments, reproductive health, and management of various gynecological conditions for overall well-being.",
+        "image": "./assets/img/obstetrics_and_gynecology_services.png",
+        "services": [
+            "Prenatal care and monitoring",
+            "High-risk pregnancy management",
+            "Routine gynecological check-ups",
+            "Diagnosis and treatment of menstrual disorders",
+            "Polycystic ovary syndrome (PCOS) management",
+            "Treatment of reproductive system infections",
+            "Minimally invasive gynecological surgeries (e.g., cyst removal, fibroid surgeries)"
+        ]
+    },
+    "ivf_unit_services": {
+        "title": "IVF Unit Services",
+        "description": "IVF (Test Tube Baby) and IUI are advanced fertility treatments designed to assist couples in achieving pregnancy.",
+        "image": "./assets/img/ivf_unit_services.png",
+        "services": [
+            "Comprehensive infertility evaluation and counseling",
+            "Ovulation induction and monitoring",
+            "Intrauterine insemination (IUI)",
+            "In vitro fertilization (IVF)",
+            "Intracytoplasmic sperm injection (ICSI)",
+            "Oocyte pickup (OPU)",
+            "Embryo freezing and cryopreservation",
+            "Egg and sperm donation programs",
+            "Preimplantation genetic testing (PGT)",
+            "Hormonal treatment for fertility optimization",
+            "Laparoscopic and hysteroscopic fertility surgeries",
+            "Supportive care and counseling throughout the IVF process"
+        ]
+    },
+    "plastic_and_reconstructive_surgery": {
+        "title": "Plastic and Reconstructive Surgery",
+        "description": "Plastic & Reconstructive Surgery offers advanced treatments for aesthetic enhancement and restorative procedures, including body contouring, facial surgeries, and repair of traumatic injuries or congenital defects.",
+        "image": "./assets/img/plastic_and_reconstructive_surgery.png",
+        "services": [            
+            {
+                "service": "Surgical Procedures:",
+                "subservices": [
+                    "Liposuction",
+                    "Fat grafting",
+                    "Body contouring",
+                    "Abdominoplasty (tummy tuck)",
+                    "Rhinoplasty (nose reshaping)",
+                    "Blepharoplasty (upper and lower eyelid surgery)",
+                    "Thigh lift",
+                    "Lower body lift",
+                    "Arm lift",
+                    "Breast reduction",
+                    "Breast lift (mastopexy)",
+                    "Breast augmentation",
+                    "Gynecomastia surgery (male breast reduction)",
+                    "Neck liposuction and lift"
+                ]
+
+            },
+            {
+                "service": "Non-Surgical Procedures:",
+                "subservices": [
+                    "Botox and filler injections",
+                    "Skin rejuvenation with Profhilo and Profound injections",
+                    "Platelet-rich plasma (PRP) and skin revitalization injections of all types",
+                    "Laser hair removal sessions",
+                    "Carbon laser facial",
+                    "Crystal skin peeling",
+                    "Hydrafacial sessions for deep skin cleansing",
+                    "LPG massage sessions",
+                    "Skin and double chin tightening with HIFU (Ulthera)",
+                    "Skin rejuvenation with INFINI (advanced microneedling and radiofrequency device)"
+                ]
+            }
+        ]
+    },
+    "general_dentistry_services":  {
+        "title":  "General Dentistry Services",
+        "description":  "General Dental Services provide comprehensive oral care, including routine check-ups, teeth cleaning, cosmetic dentistry, fillings, root canals, crowns, bridges, and dental implants for overall oral health.",
+        "image":  "./assets/img/general_dentistry_services.png",
+        "services": [
+            "Comprehensive dental check-ups",
+            "Teeth cleaning and scaling",
+            "Treatment of dental cavities and fillings",
+            "Treatment of gum inflammation and oral diseases",
+            "Tooth extraction (damaged or impacted teeth)",
+            "Root canal treatment",
+            "Fixed prosthetics (crowns and bridges)",
+            "Teeth whitening and veneers",
+            "Treatment of tooth sensitivity",
+            "Pediatric dentistry",
+            "Gum treatment and cosmetic procedures",
+            "Consultations for oral and dental care",
+            "Gum depigmentation with laser"
+        ]
+    },
+    "ear_nose_and_throat_services":  {
+        "title":  "Ear, Nose, and Throat Services",
+        "description":  "ENT (Ear, Nose, Throat) Services offer diagnosis and treatment for conditions related to the ear, nose, throat, including hearing loss, sinus issues, and balance disorders.",
+        "image":  "./assets/img/ear_nose_and_throat_services.png",
+        "services": [
+            "Diagnosis and treatment of ear, nose, and throat diseases",
+            "Treatment of middle and inner ear infections",
+            "Management of hearing problems with hearing tests and assistive devices",
+            "Hearing assessments for children and adults",
+            "Treatment of sinus infections",
+            "Nasal surgeries (cosmetic or medical)",
+            "Treatment of nasal obstruction and sinus adhesions",
+            "Treatment of snoring and sleep apnea",
+            "Treatment of laryngeal diseases, including hoarseness and throat infections",
+            "Tonsillectomy or adenoidectomy",
+            "Treatment of benign and malignant tumors in the ear, nose, and throat",
+            "Treatment of headaches caused by nasal or ear issues",
+            "Diagnosis and treatment of balance disorders and vertigo",
+            "Treatment of breathing problems caused by nasal or throat conditions",
+            "Removal of foreign objects from the ear, nose, and throat"
+        ]
+    },
+    "general_medicine_services":  {
+        "title":  "General Medicine Services",
+        "description":  "General Medical Practitioner provides primary healthcare services, offering diagnosis, treatment, and preventive care for a wide range of medical conditions to promote overall well-being.",
+        "image":  "./assets/img/general_medicine_services.png",
+        "services": [
+            "General medical consultations",
+            "Routine medical check-ups",
+            "Comprehensive diagnosis and treatment of diseases",
+            "Child health assessments and care",
+            "Post-surgical follow-ups",
+            "Prescription of medications and injections (e.g., Mounjaro and Ozempic)",
+            "Treatment of common issues such as fever, sore throat, chest infections, vitamin deficiencies, anemia, headaches, fatigue, stomach or colon pain, constipation, and urinary tract infections",
+            "Management of chronic conditions such as hypertension, diabetes, and thyroid problems, with advice and treatment for obesity"
+        ]
+    },
+    "pharmacy_services":  {
+        "title":  "Pharmacy Services",
+        "description":  "Our pharmacy offers prescription medications, consultations, over-the-counter remedies, alternative treatments, and specialized care for emergencies, dermatological needs, and long-term health management.",
+        "image":  "./assets/img/pharmacy_services.png",
+        "services": [
+            "Dispensing prescribed medications from doctors",
+            "Providing consultations on the correct use of medications",
+            "Dispensing medications for both short-term and long-term treatments",
+            "Selling over-the-counter medications (non-prescription drugs)",
+            "Offering advice on alternative treatments like vitamins and dietary supplements",
+            "Monitoring side effects and warnings related to medications",
+            "Offering advice on suitable medications for minor emergencies",
+            "Supplying medications for dermatological and cosmetic treatments"
+        ]
+
+    },
+    "products":  {
+        "title":  "Products",
+        "description":  "We provide a range of healthcare and beauty essentials, including prescription and over-the-counter medications, skincare items like moisturizers and face masks, and cosmetic products such as foundation and nail polish.",
+        "image":  "./assets/img/products.png",
+        "services": [
+            "Medicines: A wide range of prescription and over-the-counter medications for various health conditions",
+            "Skincare: Moisturizing creams and specialized face masks.",
+            "Cosmetic Products: Foundation and Nail Polish."
+        ]
+    },
+    "surgical_garments":  {
+        "title":  "Surgical Garments",
+        "description":  "We offer high-quality surgical garments designed for comfort and effective recovery, including abdominal binders, full-body support garments, and postpartum wear to aid healing and body reshaping. <br> <small>Our garments are made for comfort and effectiveness, ensuring ease of use during recovery.</small>",
+        "image":  "./assets/img/surgical_garments.png",
+        "services": [
+            "Abdominal Binders: Designed for comfort and effective recovery after abdominal surgeries.",
+            "Full-Body Support Garments: Designed for comfort and body reshaping after surgeries.",
+            "Postpartum Wear: Designed for comfort and recovery after childbirth."
+        ]
+    }
+}
+
+

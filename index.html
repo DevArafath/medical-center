@@ -36,6 +36,21 @@
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
+    <style>
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .whatsapp-btn:hover {
+            background-color: #1DA851;
+        }
+    </style>
+
 </head>
 <body>
     
@@ -66,9 +81,24 @@
                     <li class="nav-item">
                         <a href="doctor.html" class="nav-link">DOCTORS</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="services.html" class="nav-link">SERVICES</a>
+                                        
+                    <li class="nav-item dropdown">
+                        <a href="services.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">SERVICES</a>
+                        <ul class="dropdown-menu bg-brand">
+                            <li><a class="dropdown-item" href="services.html?service=obstetrics_and_gynecology_services">Obstetrics and Gynecology Services</a></li>
+                            <li><a class="dropdown-item" href="services.html?service=ivf_unit_services">IVF Unit Services</a></li>
+                            <li><a class="dropdown-item" href="services.html?service=plastic_and_reconstructive_surgery">Plastic and Reconstructive Surgery</a></li>
+                            <li><a class="dropdown-item" href="services.html?service=general_dentistry_services">General Dentistry Services</a></li>
+                            <li><a class="dropdown-item" href="services.html?service=ear_nose_and_throat_services">Ear, Nose, and Throat (ENT) Services</a></li>
+                            <li><a class="dropdown-item" href="services.html?service=general_medicine_services">General Medicine Services</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <!-- Nested Dropdown -->
+                            <li><a class="dropdown-item" href="services.html?service=pharmacy_services">Pharmacy Services</a></li>
+                            <li><a class="dropdown-item" href="services.html?service=products">Products</a></li>
+                            <li><a class="dropdown-item" href="services.html?service=surgical_garments">Surgical Garments (Binders)</a></li>
+                        </ul>
                     </li>
+
                     <li class="nav-item">
                         <a href="in-patient-care.html" class="nav-link">IN PATIENT CARE</a>
                     </li>
@@ -437,6 +467,7 @@
                         </div>
                         <p>Reach out to us for appointments, inquiries, or personalized healthcare guidance.</p>
                         <a href="tel:+97444823673" class="btn btn-brand mt-3"><img src="./assets/img/ring.gif" style="width: 25px;" class="me-1"> Call Us Now for Inquiries</a>
+                        <a href="https://wa.me/+97444823673?text=Hello!%20I%20would%20like%20to%20chat%20with%20you." class="btn whatsapp-btn mt-3"><img src="./assets/img/whatsapp.gif" style="width: 25px;" class="me-1"> Connect using WhatsApp </a>
                     </div>
                 </div>
             </div>

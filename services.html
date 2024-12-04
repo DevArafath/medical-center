@@ -98,9 +98,24 @@
                     <li class="nav-item">
                         <a href="doctor.html" class="nav-link">DOCTORS</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="services.html" class="nav-link active">SERVICES</a>
+                    
+                    <li class="nav-item dropdown">
+                        <a href="services.php" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-expanded="true">SERVICES</a>
+                        <ul class="dropdown-menu bg-brand">
+                            <li><a class="dropdown-item" href="services.html?service=obstetrics_and_gynecology_services">Obstetrics and Gynecology Services</a></li>
+                            <li><a class="dropdown-item" href="services.html?service=ivf_unit_services">IVF Unit Services</a></li>
+                            <li><a class="dropdown-item" href="services.html?service=plastic_and_reconstructive_surgery">Plastic and Reconstructive Surgery</a></li>
+                            <li><a class="dropdown-item" href="services.html?service=general_dentistry_services">General Dentistry Services</a></li>
+                            <li><a class="dropdown-item" href="services.html?service=ear_nose_and_throat_services">Ear, Nose, and Throat (ENT) Services</a></li>
+                            <li><a class="dropdown-item" href="services.html?service=general_medicine_services">General Medicine Services</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <!-- Nested Dropdown -->
+                            <li><a class="dropdown-item" href="services.html?service=pharmacy_services">Pharmacy Services</a></li>
+                            <li><a class="dropdown-item" href="services.html?service=products">Products</a></li>
+                            <li><a class="dropdown-item" href="services.html?service=surgical_garments">Surgical Garments (Binders)</a></li>
+                        </ul>
                     </li>
+
                     <li class="nav-item">
                         <a href="in-patient-care.html" class="nav-link">IN PATIENT CARE</a>
                     </li>
@@ -135,345 +150,25 @@
                 </div>
             </div>
 
-            <!-- Filter Card Section -->
-            <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
-                
-                <!-- Fiter Categories -->
-                <div>
-                    <ul class="portfolio-filter">
-                        <li data-filter="*" class="filter-active" data-aos="fade-up"><i class="fa-solid fa-notes-medical"></i>&nbsp; All Services</li>
-                        <li data-filter=".filter-a" data-aos="fade-up" data-aos-delay="200"><i class="fa-solid fa-syringe"></i>&nbsp; Surgical & Aesthetic Services</li>
-                        <li data-filter=".filter-b" data-aos="fade-up" data-aos-delay="300"><i class="fa-solid fa-stethoscope"></i>&nbsp; Women & Family Health Services</li>
-                        <li data-filter=".filter-c" data-aos="fade-up" data-aos-delay="400"><i class="fa-solid fa-flask-vial"></i>&nbsp; Diagnostic & Wellness Services</li>
+            <div class="row service-content align-items-center">
+
+                <div class="col-lg-6">
+                    <img src="./assets/img/obstetrics_and_gynecology_services.png" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="text-center text-lg-start">Obstetrics and Gynecology Services</h3>
+                    <p class="text-center text-lg-start">Obstetrics & Gynecology provides comprehensive care for women, including prenatal care, fertility treatments, reproductive health, and management of various gynecological conditions for overall well-being.</p>
+                    <ul>
+                        <li>Prenatal care and monitoring</li>
+                        <li>High-risk pregnancy management</li>
+                        <li>Routine gynecological check-ups</li>
+                        <li>Diagnosis and treatment of menstrual disorders</li>
+                        <li>Polycystic ovary syndrome (PCOS) management</li>
+                        <li>Treatment of reproductive system infections</li>
+                        <li>Minimally invasive gynecological surgeries (e.g., cyst removal, fibroid surgeries)</li>
                     </ul>
-                </div>
+                </div>       
 
-                <!-- Filter Items -->
-                <div class="row gy-4 portfolio-container">
-                    
-                    <div class="col-xl-4 col-md-6 portfolio-item filter-a" data-bs-toggle="modal" data-bs-target="#plasticSurgery">
-                        <div class="portfolio-wrap text-center">
-                            <a href="#"><img src="./assets/img/plastic_surgery.png" alt="best plastic surgeries and surgeons in qatar" title="Plastic Surgery in Qatar" class="img-fluid"></a>
-                            <button class="portfolio-btn"><a href="#">Click to Know More.</a></button>
-                            <div class="portfolio-info">
-                                <h4><a href="#" title="more-Details">Plastic & Reconstructive Surgery</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="plasticSurgery" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content text-center">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Plastic & Reconstructive Surgery</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Plastic & Reconstructive Surgery offers advanced treatments for aesthetic enhancement and restorative procedures, including body contouring, facial surgeries, and repair of traumatic injuries or congenital defects.</p>
-                                    <ul class="text-start">
-                                        <li>Plastic & Reconstructive Surgery</li>
-                                        <li>Non-Surgical Facial Rejuvenation</li>
-                                        <li>Botox Injections</li>
-                                        <li>Dermal Fillers</li>
-                                        <li>The Latest Facial Regenerative Injections</li>
-                                        <li>Skin Resurfacing & Rejuvenation</li>
-                                        <li>Laser Hair Removal</li>
-                                    </ul>
-                                </div>                        
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Each Modal -->
-
-                    <div class="col-xl-4 col-md-6 portfolio-item filter-b" data-bs-toggle="modal" data-bs-target="#OBS">
-                        <div class="portfolio-wrap text-center">
-                            <a href="#"><img src="./assets/img/obstetrics_services.png" alt="ivf treatments in qatar for fertility" title="IVF Fertility Services" class="img-fluid"></a>
-                            <button class="portfolio-btn"><a href="#">Click to Know More.</a></button>
-                            <div class="portfolio-info">
-                                <h4><a href="#" title="more-Details">Obstetrics & Gynecology</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="OBS" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content text-center">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Obstetrics & Gynecology</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Obstetrics & Gynecology provides comprehensive care for women, including prenatal care, fertility treatments, reproductive health, and management of various gynecological conditions for overall well-being.</p>
-                                    <ul class="text-start">
-                                        <li>IVF (Test Tube Baby) and ICSI (Sperm Injection)</li>
-                                        <li>Artificial Insemination (IUI)</li>
-                                        <li>Ovulation Induction</li>
-                                        <li>Repeated Miscarriage Treatment</li>
-                                        <li>Infertility Treatment</li>
-                                        <li>Endocrine Disorder Treatment</li>
-                                        <li>Repeated IVF Failure Treatment</li>
-                                        <li>3D & 4D Ultrasound</li>
-                                        <li>Hormone Treatment</li>
-                                    </ul>
-
-                                </div>                        
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Each Modal -->
-                    
-                    <div class="col-xl-4 col-md-6 portfolio-item filter-b" data-bs-toggle="modal" data-bs-target="#IVF">
-                        <div class="portfolio-wrap text-center">
-                            <a href="#"><img src="./assets/img/ivf_services.png" alt="ivf treatments in qatar for fertility" title="IVF Fertility Services" class="img-fluid"></a>
-                            <button class="portfolio-btn"><a href="#">Click to Know More.</a></button>
-                            <div class="portfolio-info">
-                                <h4><a href="#" title="more-Details">IVF Unit</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="IVF" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content text-center">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">IVF Unit</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>IVF (Test Tube Baby) and IUI are advanced fertility treatments designed to assist couples in achieving pregnancy.</p>
-                                    <ul class="text-start">
-                                        <li><b>IVF:</b> This process involves stimulating the ovaries to produce eggs, which are then fertilized with sperm in a lab. The fertilized embryos are transferred into the uterus to support pregnancy. IVF is often recommended for more complex fertility issues.</li>
-                                        <li><b>IUI:</b> A less invasive procedure where sperm is directly placed into the uterus during ovulation to increase the chances of fertilization.</li>
-                                    </ul>
-                                    <p>Both treatments are personalized to meet the specific needs of each couple, offering advanced solutions to improve the chances of conception.</p>
-                                </div>                        
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Each Modal -->
-                    
-                    <div class="col-xl-4 col-md-6 portfolio-item filter-c" data-bs-toggle="modal" data-bs-target="#bloodCollection">
-                        <div class="portfolio-wrap text-center">
-                            <a href="#"><img src="./assets/img/ent_services.png" alt="blood report and blood collection in qatar" title="Blood Collection and Report" class="img-fluid"></a>
-                            <button class="portfolio-btn"><a href="#">Click to Know More.</a></button>
-                            <div class="portfolio-info">
-                                <h4><a href="#" title="more-Details">ENT (Ear, Nose, Throat) Services</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="bloodCollection" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content text-center">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">ENT (Ear, Nose, Throat) Services</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>ENT (Ear, Nose, Throat) Services offer diagnosis and treatment for conditions related to the ear, nose, throat, including hearing loss, sinus issues, and balance disorders.</p>
-                                    <ul class="text-start">
-                                        <li>Treatment for balance disorders.</li>
-                                        <li>Removal of foreign bodies from ENT areas.</li>
-                                        <li>Audiometry & hearing loss management.</li>
-                                        <li>Endoscopic nasal & sinus surgeries.</li>
-                                        <li>Microscopic ear & throat surgeries.</li>
-                                        <li>Head, neck, & rhinoplasty surgeries.</li>
-                                        <li>Tonsillectomy & adenoidectomy procedures.</li>
-                                        <li>Ventilation tube insertion & nasal septum surgeries.</li>
-                                        <li>Advanced sinus endoscopy with laser & Coblation.</li>
-                                    </ul>
-                                </div>                        
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Each Modal -->
-                    
-                    <div class="col-xl-4 col-md-6 portfolio-item filter-a" data-bs-toggle="modal" data-bs-target="#dayCareSurgery">
-                        <div class="portfolio-wrap text-center">
-                            <a href="#"><img src="./assets/img/filler_services.png" alt="day care surgery in qatar" title="Day Care Surgery" class="img-fluid"></a>
-                            <button class="portfolio-btn"><a href="#">Click to Know More.</a></button>
-                            <div class="portfolio-info">
-                                <h4><a href="#" title="more-Details">Oral & Maxillofacial Surgery</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="dayCareSurgery" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content text-center">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Oral & Maxillofacial Surgery</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Oral & Maxillofacial Surgery specializes in the diagnosis and treatment of conditions affecting the mouth, jaw, and face, including dental implants, tooth extractions, and facial reconstruction.</p>
-                                    <ul class="text-start">
-                                        <li>Diagnosis & Treatment of Oral Surgical Conditions Under Local and General Anesthesia.</li>
-                                        <li>Surgical & Non-Surgical Removal of Teeth.</li>
-                                        <li>Extraction Of Wisdom Teeth.</li>
-                                        <li>Surgical Exposure of Impacted Teeth.</li>
-                                        <li>Placement Of Dental Implants with Bone Grafting & Sinus Lifting.</li>
-                                        <li>Use Of Lasers in Oral & Maxillofacial Region.</li>
-                                        <li>Botox Injection.</li>
-                                        <li>Dermal Filler.</li>
-                                        <li>Treatment Of Oral & Maxillofacial Conditions.</li>
-                                    </ul>
-                                </div>                        
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Each Modal -->
-                                    
-                    <div class="col-xl-4 col-md-6 portfolio-item filter-c" data-bs-toggle="modal" data-bs-target="#laserTreatment">
-                        <div class="portfolio-wrap text-center">
-                            <a href="#"><img src="./assets/img/dental_services.png" alt="laser services in qatar" title="Laser Servies" class="img-fluid"></a>
-                            <button class="portfolio-btn"><a href="#">Click to Know More.</a></button>
-                            <div class="portfolio-info">
-                                <h4><a href="#" title="more-Details">General Dental Services</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="laserTreatment" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content text-center">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">General Dental Services</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>General Dental Services provide comprehensive oral care, including routine check-ups, teeth cleaning, cosmetic dentistry, fillings, root canals, crowns, bridges, and dental implants for overall oral health.</p>
-                                    <ul class="text-start">
-                                        <li>Comprehensive Dental Assessment</li>
-                                        <li>Teeth and Gum Cleaning (Scaling and Polishing)</li>
-                                        <li>Teeth Whitening (Bleaching)</li>
-                                        <li>Cosmetic Dentistry & Hollywood Smile</li>
-                                        <li>All types of Dental Fillings (Restorations)</li>
-                                        <li>Root Canal Treatment (Endodontic Treatment)</li>
-                                        <li>Dental Crowns and Bridges</li>
-                                        <li>Dental Implants</li>
-                                        <li>Wisdom Teeth Surgery and Impacted Tooth Extraction</li>
-                                    </ul>
-                                </div>                        
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Each Modal -->
-                    
-                    <div class="col-xl-4 col-md-6 portfolio-item filter-c" data-bs-toggle="modal" data-bs-target="#entTreatment">
-                        <div class="portfolio-wrap text-center">
-                            <a href="#"><img src="./assets/img/in_vitro_fertilization.png" alt="ears norse throat services in qatar" title="ENT Doctors in Qatar" class="img-fluid"></a>
-                            <button class="portfolio-btn"><a href="#">Click to Know More.</a></button>
-                            <div class="portfolio-info">
-                                <h4><a href="#" title="more-Details">Blood Sample Collection Unit</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="entTreatment" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content text-center">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Blood Sample Collection Unit</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>A Blood Sample Collection Unit Blood collection services involve the process of obtaining blood samples for medical testing. These services are crucial for diagnosing health conditions, planning treatments, and monitoring patient progress.</p>
-                                </div>                        
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Each Modal -->
-                    
-                    <div class="col-xl-4 col-md-6 portfolio-item filter-b" data-bs-toggle="modal" data-bs-target="#filler">
-                        <div class="portfolio-wrap text-center">
-                            <a href="#"><img src="./assets/img/day_care_surgery.png" alt="filler services in qatar" title="Filler Services" class="img-fluid"></a>
-                            <button class="portfolio-btn"><a href="#">Click to Know More.</a></button>
-                            <div class="portfolio-info">
-                                <h4><a href="#" title="more-Details">General Medical Practitioner</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="filler" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content text-center">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">General Medical Practitioner</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>General Medical Practitioner provides primary healthcare services, offering diagnosis, treatment, and preventive care for a wide range of medical conditions to promote overall well-being.</p>
-                                    
-                                </div>                        
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Each Modal -->
-                    
-                    <div class="col-xl-4 col-md-6 portfolio-item filter-b" data-bs-toggle="modal" data-bs-target="#anesthesiology">
-                        <div class="portfolio-wrap text-center">
-                            <a href="#"><img src="./assets/img/anesthesiology_service.png" alt="filler services in qatar" title="Filler Services" class="img-fluid"></a>
-                            <button class="portfolio-btn"><a href="#">Click to Know More.</a></button>
-                            <div class="portfolio-info">
-                                <h4><a href="#" title="more-Details">Anesthesiology</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="anesthesiology" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content text-center">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Anesthesiology Services</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Anesthesiology ensures patient safety, comfort, and pain relief throughout surgeries and medical treatments.</p>
-                                    <ul class="text-start">
-                                        <li><b>Preoperative Assessment:</b> Evaluating patient health to plan anesthesia.</li>
-                                        <li><b>General Anesthesia:</b> Inducing unconsciousness for major surgeries.</li>
-                                        <li><b>Regional Anesthesia:</b> Numbing specific body parts (e.g., epidurals, spinal blocks).</li>
-                                        <li><b>Local Anesthesia:</b> Numbing a small area for minor procedures.</li>
-                                        <li><b>Sedation:</b> Providing relaxation and pain relief during less invasive procedures.</li>
-                                        <li><b>Postoperative Care:</b> Managing recovery from anesthesia and pain control.</li>
-                                    </ul>
-                                </div>                        
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Each Modal -->
-                    
-                    <div class="col-xl-4 col-md-6 portfolio-item filter-c" data-bs-toggle="modal" data-bs-target="#gpDoctor">
-                        <div class="portfolio-wrap text-center">
-                            <a href="#"><img src="./assets/img/general_practitioner.png" alt="general practitioner doctors in qatar" title="General Practitioner Services" class="img-fluid"></a>
-                            <button class="portfolio-btn"><a href="#">Click to Know More.</a></button>
-                            <div class="portfolio-info">
-                                <h4><a href="#" title="more-Details">Pharmacy Services</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="gpDoctor" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content text-center">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Pharmacy Services</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Pharmacy Services offer a wide range of medications, health products, and expert consultation to support treatment plans and ensure optimal health outcomes for patients.</p>
-                                    <ul class="text-start">
-                                        <li>Comprehensive medication supply and consultation</li>
-                                    </ul>
-                                </div>                        
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Each Modal -->
-                        
-                </div>
-                
             </div>
 
         </div>
